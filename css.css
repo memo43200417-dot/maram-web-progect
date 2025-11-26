@@ -1,0 +1,291 @@
+/* إعداد الخطوط والألوان العامة */
+body {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7d7c7;
+   /* color: #3e2c1c;*/
+    display: flex;
+   /* padding: 20px;*/
+    justify-content: center;
+    background-image: url('images/105.jpg');
+  }
+ /* .page{
+    width: 210mm;
+    height: 297mm;
+    background-color: #d4ad86;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    padding: 20px;
+    background-image: url('105.jpg');
+    
+  }*/
+ 
+  /* الشريط العلوي */
+  .navbar {
+    display: flex;/* يخلي h و ul جمب بعض */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e2c1c;
+    padding: 15px 30px;
+    border-radius: 15px;
+   /*text-align: center;*/
+  }
+  /*.logo h1{
+   /* display: inline-block;
+     /* font-size: 40px;
+     /* font-weight: bold;*/
+     /* margin: 0 15px;*/
+      /*color: #4b2e05;*/
+     /* vertical-align: middle;*/
+     /* text-align: center;*
+  }*/
+  .navbar .logo {
+    color: #fff ;
+    font-size: 30px;
+    /*vertical-align: middle;
+    text-align: center;*/
+  }
+  
+  
+  /*.navbar .logo span {
+    color: #d4a373;
+    font-size: 16px;
+    margin-right: 5px;
+  }*/
+  
+  .navbar ul {
+    list-style: none; /*بدون نقط */
+    display: flex;/* يخلي عناصر القائمه جمب بعض*/
+    gap: 20px; /*المستفه بين عناصر القائمة*/
+   /* margin: 0;
+    padding: 0;*/
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none; /*بدون خط تحتهن*/
+    font-weight: bold;
+    transition: 0.3s;  /*تنتقل بسلاسه عند التمرير*/
+  }
+  
+  .navbar a:hover, .navbar a.active {
+    color: #d4a373; /* الرابط النشط او عند التمرير على رابط يوقع لونه ذهبي*/
+  }
+  
+  /* الصورة الرئيسية */
+  .hero {
+    /*background-image: url('https://i.imgur.com/1Jd3TzX.jpg'); /* يمكنك تغيير الصورة لاحقًا */
+   /* background-size: cover;*/
+   /* background-position: center;*/
+   /* position: relative;*/
+   height: 85vh;
+    display: flex;/*...*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  .hero .overlay {
+   /* background: rgba(245, 243, 243,255);*/
+    color: #3e2c1c;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: rgba(201, 179, 150, 0.9);
+    
+    /*#f3d8be*/
+  }
+  
+  .hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  /*.hero h2 span {
+    color: #d4a373;
+  } لو به نص انجليزي يخلي لونه ذهبي*/
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #3e2c1c;
+    color: #cebdaf;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #fff;/*يتغير الللون عند التمرير عليها*/
+  }
+  
+  /* قسم التعريف */
+  .intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(201, 179, 150, 0.9);
+   /* border-top: 2px solid #d4a37333;*/
+    border-radius: 15px;
+  }
+  
+  .intro h3 {
+    font-size: 28px;
+    color: #3e2c1c;
+  }
+  
+  .intro p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.8;/*نسبه تباعد بين السطور*/
+  }
+  
+  /* التذييل */
+  footer {
+    background-color: #3e2c1c;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 15px;
+    
+  }
+  .menu-section {
+    /* background-color: rgba(255, 250, 245, 0.95);*/
+    background-color: rgba(201, 179, 150, 0.9);
+     margin: 30px auto;/* تخلي ال section متباعد */
+     width: 80%;
+     max-width: 900px;
+     padding: 25px;
+     border-radius: 15px;
+   }
+   h2 {
+     text-align: center;
+     font-size: 26px;
+     color: #4b2e05;
+     border-bottom: 2px solid #917551;
+     padding-bottom: 10px;
+     margin-bottom: 20px;
+   }
+   table {
+     width: 100%;
+     border-collapse: collapse;
+    /* text-align: right;*/
+   }
+   
+   td {
+     padding: 10px 15px;
+     font-size: 18px;
+     border-bottom: 1px solid #eee;
+     vertical-align: middle;/* تخلي النص وسط الخلية */
+   }
+   
+   td img {
+     width: 50px;
+     height: 50px;
+     border-radius: 10px;
+     object-fit: cover;/* تخلي الصورة متلائمة */
+     margin-left: 10px;
+   }
+   
+   td.price {
+     text-align: left;
+     color: #4b2e05;
+     font-weight: bold;
+   }
+
+  .about-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    /*background-color: #fff7f0;*/
+    background-color: rgba(201, 179, 150, 0.9);
+    border-radius: 15px;
+    text-align: right;
+  }
+  
+  .about-section h2, .about-section h3 {
+    color: #3e2c1c;
+  }
+  
+  .about-section ul {
+    list-style-type: square;
+    padding-right: 20px;
+    line-height: 1.8;/*  نسبه التباعد بين الاسطر*/
+  }
+  .contact-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    /*background-color: #fff7f0;*/
+    background-color: rgba(201, 179, 150, 0.9);
+    border-radius: 15px;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    color: #3e2c1c;
+    margin-bottom: 30px;
+  }
+  
+  .contact-section form {
+    display: flex;/* يخليهن مرتبات */
+    flex-direction: column;/*يخلي ترتيبهن فوق*/ 
+    gap: 15px;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d4a37333;
+    font-size: 16px;
+  }
+  
+  .contact-section button {
+    background-color:  #3e2c1c;
+    color:#d4a373 ;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact-section button:hover {
+   background-color: #fff;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+    line-height: 1.8;
+    color: #3e2c1c;
+  }
+
+
+  /* حركة الظهور */
+.menu-section, .about-section, .intro, .contact-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* شكل القائمة بعد التمرير */
+.navbar.scrolled {
+  background-color: #2a1f15;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
